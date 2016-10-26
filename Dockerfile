@@ -35,9 +35,6 @@ COPY etc /etc/
 COPY run.sh /run.sh
 RUN chmod u+rwx /run.sh
 
-# Add volume for sessions to allow session persistence
-VOLUME /sessions
-
 # We expose phpMyAdmin on port 80
 EXPOSE 80
 
