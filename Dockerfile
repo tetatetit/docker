@@ -35,6 +35,8 @@ COPY etc /etc/
 COPY run.sh /run.sh
 RUN chmod u+rwx /run.sh
 
+RUN mkdir /sessions
+
 # We expose phpMyAdmin on port 80
 EXPOSE 80
 
